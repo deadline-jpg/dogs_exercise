@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #16232e;
+}
+
+header {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+header .msrBtn {
+  font-size: 1.3rem;
+  margin: 0 10px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 7px;
+  background-color: #cc8d1a;
+  color: white;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+header .msrBtn:hover {
+  cursor: pointer;
+  background-color: #f6ab21;
+  transform: scale(1.05);
+}
