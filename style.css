@@ -8,6 +8,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   color: white;
+  background-color: #cc8d1a;
 }
 
 h1 {
@@ -17,7 +18,8 @@ h1 {
 
 .container {
   max-width: 1200px;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   margin: 0 auto;
   background-color: #16232e;
 }
@@ -33,8 +35,11 @@ header h1 {
 }
 
 header .msrBtn {
-  font-size: 1.3rem;
   margin: 0 10px;
+}
+
+header button {
+  font-size: 1.3rem;
   padding: 12px 30px;
   border: none;
   border-radius: 7px;
@@ -43,8 +48,36 @@ header .msrBtn {
   transition: background-color 0.5s, transform 0.5s;
 }
 
-header .msrBtn:hover {
+header button:hover {
   cursor: pointer;
   background-color: #f6ab21;
   transform: scale(1.05);
+}
+
+header .show-box {
+  display: flex;
+  justify-content: center;
+}
+
+header .show-me {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  min-width: 270px;
+}
+
+.dog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.dog-card {
+  background-color: #164c45;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
 }
